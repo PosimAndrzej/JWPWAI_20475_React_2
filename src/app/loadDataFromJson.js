@@ -5,7 +5,7 @@ export default function LoadDataFromJson() {
 
     async function loadDataFromJson() {
         try {
-            const response = await fetch("/dane.json");
+            const response = await fetch("json/dane.json");
             const jsonData = await response.json();
             setData({ ...jsonData, loaded: true });
         } catch (error) {
